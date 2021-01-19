@@ -13,7 +13,7 @@ def IPAddress(IP: str) -> str:
     return "This IP is ==> Private" if (ip_address(IP).is_private) else "This IP is ==> Public"
 
 print("Insert URL To Check")
-url = input(int())
+url = input()
 
 if __name__ == '__main__' :  
    
@@ -22,7 +22,7 @@ if __name__ == '__main__' :
     
 url_2 = ["https://www.abuseipdb.com/check/","https://talosintelligence.com/reputation_center/lookup?search=","https://www.ipqualityscore.com/ip-reputation-check/lookup/",
          "https://www.ipligence.com/ip-address?ip="]
-#for link in url_2:
-    #webbrowser.open_new_tab(link+url)
+for link in url_2:
+    webbrowser.open_new_tab(link+url)
 
 print ("Done")
